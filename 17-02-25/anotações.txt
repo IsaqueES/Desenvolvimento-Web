@@ -1,0 +1,22 @@
+1º Semestre
+> HTML -> Hyper Text Markup Language
+-Dar sentido ao conteúdo!
+> CSS -> Cascading Style Sheets
+-Deixar bonito!
+
+2º Semestre
+> JavaScript -> Linguagem de programação que permite a você implementar itens complexos em páginas web
+-Interatividade
+
+<h1,2,3,4,5...> -> Títulos
+<p> -> Parágrafos
+<a> -> Links
+<img> -> Imagens
+<ul> -> Listas não ordenadas
+<ol> -> Listas ordenadas
+<li> -> Itens de lista
+<table> -> Tabela
+<tr> -> Linha da tabela
+<td> -> Coluna da tabela
+<form> -> Formulário
+<input> -> Entrada de dados
