@@ -19,4 +19,4 @@
 <tr> -> Linha da tabela
 <td> -> Coluna da tabela
 <form> -> Formulário
-<input> -> Entrada de dados
+<input> -> Entrada de dadoss
