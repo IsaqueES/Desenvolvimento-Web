@@ -1,0 +1,10 @@
+Aula do dia 24/02/2025
+
+Anotações sobre o que foi aprendido:
+- A importância de separar a estrutura (HTML), o estilo (CSS) e o comportamento (JavaScript) em arquivos distintos.
+- Como organizar um projeto web de forma clara e eficiente.
+- Boas práticas de desenvolvimento web, como a utilização de comentários no código para facilitar a compreensão e a manutenção.
+- A aplicação de estilos CSS para melhorar a aparência visual do site.
+- Utilização de HTML semantico
+- Tags Novas como: header, footer, nav, aside, section, article, main
+- A importância de manter o código limpo e bem organizado.

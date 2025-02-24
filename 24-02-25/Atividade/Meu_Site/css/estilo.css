@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+}
+
+header {
+  flex: 0 0 auto;
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.Topicos {
+  border-bottom: #000 1px solid;
+  text-align: center;
+  font-size: 15px;
+}
+section {
+  text-align: center;
+}
+
+video {
+  width: 50%;
+  border-radius: 10px;
+  border: #000 2px solid;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+}
