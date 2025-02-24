@@ -3,8 +3,8 @@ Bem-vindo ao repositório das Aulas de Desenvolvimento Web do IFSP - Campus Jaca
 
 O que Vamos Aprender 📚
 Durante o curso, vamos aprender as principais tecnologias e práticas usadas no desenvolvimento de sites e aplicações web. Aqui estão os tópicos que vamos cobrir:
+![Commits Badge](https://img.shields.io/github/commit-activity/c/IsaqueES/Desenvolvimento-Web)
 
-![Commits Badge](https://img.shields.io/github/commit-activity/y/IsaqueES/Desenvolvimento-Web)
 
 
 1. HTML 📝
