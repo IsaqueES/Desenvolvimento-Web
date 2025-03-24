@@ -13,16 +13,16 @@ header {
   background-color: rgb(34, 34, 34);
 }
 #esquerda {
-  margin-top: 25%;
+  background-color: red;
+
   width: 25%;
   position: fixed;
-  height: 100%;
 }
 
 #direita {
   background-color: rgb(24, 96, 160);
   padding-top: 10px;
-  position: relative;
+  float: right;
   padding-bottom: 10px;
   left: 25%;
   bottom: 100%;
@@ -37,4 +37,8 @@ p {
 hr {
   margin-top: 90px;
   margin-bottom: 90px;
+}
+#box1,
+#box2 {
+  padding: 70%;
 }
