@@ -88,7 +88,7 @@ header {
 }
 #rotate:hover {
   transition: 2.5s;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 
 /*   <Format>  */

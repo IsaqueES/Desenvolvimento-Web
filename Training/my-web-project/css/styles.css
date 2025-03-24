@@ -1,0 +1,46 @@
+/* Adicionando animação ao hover dos links de navegação */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  background: #e8491d;
+  transform: scale(1.1); /* Aumenta o tamanho do link ao passar o mouse */
+}
+
+/* Adicionando animação ao header */
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Animação de fade-in ao carregar a página */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Adicionando animação ao footer */
+footer {
+  background: #35424a;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+footer:hover {
+  background: #e8491d; /* Muda a cor do fundo ao passar o mouse */
+}
