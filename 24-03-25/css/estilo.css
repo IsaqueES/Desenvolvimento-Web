@@ -1,19 +1,40 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
+  background-color: rgb(160, 210, 255);
 }
 
-header{
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 40px;
+#container {
+  text-align: center;
 }
 
-footer{
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
+header {
+  padding: 10px;
+  color: whitesmoke;
+  background-color: rgb(34, 34, 34);
+}
+#esquerda {
+  margin-top: 25%;
+  width: 25%;
+  position: fixed;
+  height: 100%;
+}
+
+#direita {
+  background-color: rgb(24, 96, 160);
+  padding-top: 10px;
+  position: relative;
+  padding-bottom: 10px;
+  left: 25%;
+  bottom: 100%;
+  width: 75%;
+}
+
+p {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+hr {
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
