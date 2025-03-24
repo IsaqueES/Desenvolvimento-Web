@@ -12,6 +12,7 @@ header {
   color: whitesmoke;
   background-color: rgb(34, 34, 34);
 }
+
 #esquerda {
   width: 25%;
   height: 100vh;
@@ -19,7 +20,6 @@ header {
 }
 @media (max-width: 768px) {
   h1 {
-    background-color: blue;
     font-size: 3vh;
   }
   li {
