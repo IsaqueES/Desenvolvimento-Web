@@ -13,10 +13,23 @@ header {
   background-color: rgb(34, 34, 34);
 }
 #esquerda {
-  background-color: red;
-
   width: 25%;
+  height: 100vh;
   position: fixed;
+}
+@media (max-width: 768px) {
+  h1 {
+    background-color: blue;
+    font-size: 3vh;
+  }
+  li {
+    padding: 5px;
+    background-color: rgb(24, 96, 160);
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 1s;
+  }
 }
 
 #direita {
@@ -38,7 +51,29 @@ hr {
   margin-top: 90px;
   margin-bottom: 90px;
 }
-#box1,
-#box2 {
-  padding: 70%;
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 10px;
+  background-color: rgb(24, 96, 160);
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: 1s;
+}
+li:hover {
+  transition: 1s;
+  background-color: rgb(89, 112, 240);
+  position: relative;
+  box-shadow: 1px 1px 4px 1px rgb(0, 81, 255);
 }
