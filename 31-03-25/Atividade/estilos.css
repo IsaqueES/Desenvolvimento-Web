@@ -24,6 +24,7 @@ h2 {
 }
 .footer {
   text-align: center;
+  float: inline-end;
   background-color: rgb(133, 94, 185);
   width: 100%;
 }
