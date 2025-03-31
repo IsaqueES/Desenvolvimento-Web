@@ -10,6 +10,7 @@ body {
 [class*="col-"] {
   float: left;
   width: 100%;
+  box-sizing: border-box;
 }
 
 @media only screen and (min-width: 600px) {
@@ -53,6 +54,7 @@ body {
 
 .yellow {
   background-color: yellow;
+  padding: 80px;
 }
 .blue {
   background-color: blue;
@@ -62,8 +64,9 @@ body {
   background-color: green;
   padding: 80px;
 }
-== > .red {
+.red {
   background-color: red;
+  padding: 80px;
 }
 .purple {
   background-color: purple;
@@ -75,6 +78,7 @@ body {
 }
 .pink {
   background-color: pink;
+  padding: 80px;
 }
 .brown {
   background-color: brown;
