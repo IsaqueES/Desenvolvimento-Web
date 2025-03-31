@@ -1,17 +1,7 @@
 /* body {
   text-align: center;
 }
-
-@media only screen and (orientation: landscape) {
-  body {
-    background-color: rgb(97, 80, 112);
-  }
-} */
-
-body {
-  margin: 0;
-}
-
+*/
 .col {
   border-radius: 8px;
   width: 33.333333333%;
@@ -19,6 +9,20 @@ body {
   padding: 80px;
   box-sizing: border-box;
   border: 1px solid black;
+}
+@media only screen and (max-width: 500px) {
+  .col {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .col {
+    width: 100%;
+  }
+}
+
+body {
+  margin: 0;
 }
 
 #c1 {
