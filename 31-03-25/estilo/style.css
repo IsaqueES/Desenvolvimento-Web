@@ -1,0 +1,64 @@
+/* body {
+  text-align: center;
+}
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: rgb(97, 80, 112);
+  }
+} */
+
+body {
+  margin: 0;
+}
+
+.col {
+  border-radius: 8px;
+  width: 33.333333333%;
+  float: left;
+  padding: 80px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+#c1 {
+  background-color: rgb(255, 84, 107);
+}
+#c2 {
+  background-color: rgb(63, 161, 63);
+}
+#c3 {
+  background-color: rgb(67, 102, 199);
+}
+#c4 {
+  background-color: rgb(255, 255, 0);
+}
+#c5 {
+  background-color: rgb(255, 165, 0);
+}
+#c6 {
+  background-color: rgb(255, 0, 255);
+}
+#c7 {
+  background-color: rgb(0, 255, 255);
+}
+#c8 {
+  background-color: rgb(255, 0, 0);
+}
+#c9 {
+  background-color: rgb(0, 255, 0);
+}
+
+#c1:hover,
+#c2:hover,
+#c3:hover,
+#c4:hover,
+#c5:hover,
+#c6:hover,
+#c7:hover,
+#c8:hover,
+#c9:hover {
+  transform: scale(1.07);
+  color: white;
+  transition: all 0.5s ease;
+}
