@@ -1,0 +1,61 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+}
+
+#whitebox {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  border-radius: 10px;
+
+  border: 1px solid #000;
+  flex-wrap: wrap;
+}
+.box {
+  background-color: #6a5acd;
+  padding: 12%;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.box:hover {
+  transition: 1.53s;
+  scale: 1.1;
+}
+.box:hover::after {
+  content: "TRISTEZA";
+}
+
+#box1 {
+  border-radius: 100%;
+  background-color: red;
+}
+
+#box2,
+#box3,
+#box4,
+#box5,
+#box7,
+#box8,
+#box9,
+#box10,
+#box11 {
+  border-radius: 20px;
+  background-color: green;
+}
+
+#box6,
+#box12 {
+  border-radius: 20px;
+  background-color: #f4f4f4;
+}
