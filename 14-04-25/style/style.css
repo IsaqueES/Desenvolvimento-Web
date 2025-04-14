@@ -1,41 +1,173 @@
-/* ALL */
+/* Variáveis CSS */
+:root {
+  --border-color: white;
+  --text-color: white;
+  --background-color: #111;
+  --box-bg: #222;
+  --hover-color: #444;
+}
+
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
-  align-items: center;
-  text-align: center;
-  align-self: center;
+  box-sizing: border-box;
 }
 
-/* VARIAVEIS */
-:root {
-  --cp: blueviolet;
-  --bp: 15px;
-  --bb: 1px solid black;
-}
-header {
-  text-align: center;
-  padding: 20px;
-  color: white;
-  background-color: var(--cp);
-}
-
-.blocomae {
-  margin: 3px;
+body {
+  background-color: var(--background-color);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: var(--text-color);
+  min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
-.bloco {
-  max-width: fit-content;
-  padding: 40px;
-  border: var(--bb);
-  margin: 10px;
+
+/* Container geral */
+.container {
   display: flex;
-  border-radius: var(--bp);
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
 }
-.bloco:hover {
-  box-shadow: 0 0 10px 6px rgba(137, 43, 226, 0.308);
-  transition: all 0.36s ease-in-out;
+
+/* Box geral */
+.box {
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  padding: 20px;
+  background-color: var(--box-bg);
+  text-align: center;
+  font-size: 1.5rem;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Título */
+#title {
+  font-size: 2rem;
+  animation: slideDown 1s ease forwards;
+}
+
+/* Grid dos itens */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Hovers básicos */
+.box:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* Animações específicas para cada ID */
+#hover-box {
+  animation: bounce 2s infinite;
+}
+
+#scale {
+  animation: grow 1.5s infinite alternate;
+}
+
+#transform {
+  animation: spin 3s infinite linear;
+}
+
+#matrix {
+  animation: skew 2s infinite alternate;
+}
+
+#keyframes {
+  animation: pulse 2s infinite;
+}
+
+#rotate {
+  animation: rotate 4s infinite linear;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes skew {
+  from {
+    transform: skew(0deg, 0deg);
+  }
+  to {
+    transform: skew(10deg, 10deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
