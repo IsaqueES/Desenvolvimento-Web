@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>19-05-25</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-indigo-600 text-white py-6 shadow-md">
+      <h1 class="text-4xl font-bold text-center">Cadastro de Animais</h1>
+    </header>
+
+    <!-- Formulário -->
+    <div
+      id="resultado"
+      class="max-w-2xl mx-auto mt-8 p-6 bg-white rounded-xl shadow-md space-y-6"
+    >
+      <div class="flex flex-col space-y-2">
+        <label for="animalname" class="text-lg font-medium">Animal Name</label>
+        <input
+          type="text"
+          id="animalname"
+          class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          placeholder="Enter animal name"
+        />
+      </div>
+
+      <div class="flex flex-col space-y-2">
+        <label for="animalage" class="text-lg font-medium">Animal Specie</label>
+        <input
+          type="text"
+          id="animalage"
+          class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          placeholder="Enter animal specie"
+        />
+      </div>
+    </div>
+
+    <!-- Botão -->
+    <div id="divbotao" class="max-w-2xl mx-auto mt-6 text-center">
+      <button
+        id="addanimal"
+        class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out"
+      >
+        ADD ANIMAL
+      </button>
+    </div>
+
+    <!-- Lista de Animais Cadastrados -->
+    <div
+      id="animaiscadastrados"
+      class="max-w-2xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-md space-y-4"
+    >
+      <h2 class="text-2xl font-bold text-indigo-600 mb-4">
+        Animais Cadastrados
+      </h2>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>
