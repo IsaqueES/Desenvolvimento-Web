@@ -31,10 +31,24 @@ function Complete(box, check) {
   var checked = document.getElementById(check);
   var boxx = document.getElementById(box);
   if (checked.checked) {
-    boxx.style.backgroundColor = "#6a5acd";
+    boxx.style.backgroundColor = "#008000";
     boxx.style.color = "white";
   } else {
     boxx.style.color = "black";
     boxx.style.backgroundColor = "#f4f4f4";
   }
 }
+
+var modo = document.getElementById("modo");
+modo.addEventListener("click", function () {
+  var body = document.body;
+  if (body.style.backgroundColor === "black") {
+    body.style.backgroundColor = "#f4f4f4";
+    body.style.color = "black";
+    modo.innerHTML = "Dark Mode";
+  } else {
+    body.style.backgroundColor = "black";
+    body.style.color = "white";
+    modo.innerHTML = "Light Mode";
+  }
+});
