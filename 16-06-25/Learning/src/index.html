@@ -3,32 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>16-06-25</title>
-    <!-- Tailwind CDN (caso ainda não tenha incluído) -->
+    <title>Séries TV</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../script/script.js" defer></script>
   </head>
-  <body
-    class="flex flex-col items-center justify-center min-h-screen gap-4 p-4"
-  >
-    <input
-      type="text"
-      placeholder="Digite o CEP"
-      id="cepi"
-      class="border border-gray-400 rounded px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-blue-400"
-    />
-    <button
-      onclick="obterCep()"
-      class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded shadow"
-    >
-      Submit
-    </button>
+  <body class="flex flex-col items-center p-6 gap-6 min-h-screen">
+    <h1 class="text-2xl font-bold text-center">Buscar Séries de TV</h1>
+
+    <div class="flex gap-2">
+      <input
+        type="text"
+        id="cepi"
+        placeholder="Digite o nome da série"
+        class="border border-gray-400 rounded px-4 py-2 w-72 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+      <button
+        onclick="obterSeries()"
+        class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded shadow"
+      >
+        Buscar
+      </button>
+    </div>
+
     <div
       id="resultdiv"
-      class="mt-4 bg-white border border-gray-300 rounded p-4 w-64 text-center shadow"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl"
     >
-      Result
+      <!-- Os cards serão inseridos aqui -->
     </div>
   </body>
 </html>
