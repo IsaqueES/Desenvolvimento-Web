@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar Tarefa</title>
+  </head>
+  <body>
+    <h1>Adicionar Nova Tarefa</h1>
+    <form action="/tarefas/tarefas" method="POST">
+      <label for="titulo">Título:</label><br />
+      <input type="text" id="titulo" name="titulo" /><br /><br />
+      <label for="feito">Feita (0 para não feita, 1 para feita):</label><br />
+      <input type="number" id="feito" name="feito" value="0" /><br /><br />
+      <input type="submit" value="Criar Tarefa" />
+    </form>
+  </body>
+</html>
